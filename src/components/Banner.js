@@ -7,14 +7,15 @@ function Banner() {
     background-image: url(${banner});
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 40% 60%;
+    background-color: #eee;
+    grid-template-columns: 60% 40%;
 
     @media (max-width: 1024px) {
       grid-template-columns: 100%;
-      background-size: cover;
+      background-size: contain;
       height: auto;
     }
   `
@@ -43,28 +44,25 @@ function Banner() {
   `
 
   const Description = styled.span`
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Roboto Mono", monospace;
     color: #1d1d1d;
 
     @media (max-width: 1024px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   `
   return (
-    <>
-      <Banner>
-        <BannerLeft>
-          <MyName>Trịnh Nam Siêu Sao</MyName>
-          <Description>
-            My name is Trịnh Nam Siêu Sao and I'm studying Information
-            Technology at SGU. I'm from Vietnam and my goal is to become a
-            Developer.
-          </Description>
-        </BannerLeft>
-        <div></div>
-      </Banner>
-    </>
+    <Banner>
+      <BannerLeft>
+        <MyName>Trịnh Nam Siêu Sao</MyName>
+        <Description>
+          My name is Trịnh Nam Siêu Sao and I'm studying Information Technology
+          at SGU. I'm from Vietnam and my goal is to become a Developer.
+        </Description>
+      </BannerLeft>
+      <div></div>
+    </Banner>
   )
 }
 

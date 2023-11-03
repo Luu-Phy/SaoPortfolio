@@ -9,7 +9,6 @@ const Container = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100%;
-  padding: 2rem;
 `
 
 const Title = styled.h1`
@@ -24,8 +23,11 @@ const Grid = styled.div`
   grid-template-columns: auto auto auto auto;
   grid-gap: 2rem;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: auto auto;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: auto;
   }
 `
 
@@ -39,7 +41,7 @@ const GridItem = styled.div`
 const Img = styled.img`
   width: 100%;
   max-width: 20rem;
-  height: auto;
+  height: 13rem;
   border-radius: 10px;
 `
 

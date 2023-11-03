@@ -1,10 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// eslint-disable-next-line
 import {
+  // eslint-disable-next-line
   faFacebook,
+  // eslint-disable-next-line
   faGithub,
+  // eslint-disable-next-line
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons"
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
+import {
+  // eslint-disable-next-line
+  faPhone,
+  // eslint-disable-next-line
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons"
 
 import React from "react"
 import styled from "styled-components"
@@ -12,18 +22,19 @@ import styled from "styled-components"
 const HeaderWrap = styled.div`
   position: fixed;
   background-color: rgba(0, 0, 0, 0.45);
-  width: 100%;
+  width: 100vw;
   height: 80px;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 70% auto;
   align-content: center;
   align-items: center;
+  z-index: 1;
   @media (max-width: 1024px) {
     flex-direction: column;
     height: auto;
   }
 `
-
+// eslint-disable-next-line
 const HeaderRight = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -49,27 +60,27 @@ const StyledTitleLink = styled.a`
     font-size: 12px;
   }
 `
-
+// eslint-disable-next-line
 const FacebookIcon = styled(FontAwesomeIcon)`
   color: #1877f2;
   font-size: 1.3rem;
 `
-
+// eslint-disable-next-line
 const GithubIcon = styled(FontAwesomeIcon)`
   color: #333;
   font-size: 1.3rem;
 `
-
+// eslint-disable-next-line
 const LinkedInIcon = styled(FontAwesomeIcon)`
   color: #0a66c2;
   font-size: 1.3rem;
 `
-
+// eslint-disable-next-line
 const PhoneIcon = styled(FontAwesomeIcon)`
   color: #000;
   font-size: 1.3rem;
 `
-
+// eslint-disable-next-line
 const EnvelopeIcon = styled(FontAwesomeIcon)`
   color: #ea4335;
   font-size: 1.3rem;

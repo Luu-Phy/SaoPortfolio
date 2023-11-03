@@ -3,10 +3,12 @@ import styled from "styled-components"
 
 function Skills() {
   const Container = styled.div`
-    margin: 0 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    @media (max-width: 1024px) {
+      grid-template-columns: 30% 60%;
+      column-gap: 1rem;
+    }
   `
 
   const SkillsLeftPage = styled.div`
@@ -14,20 +16,21 @@ function Skills() {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    width: 100%;
     height: 100vh;
   `
   const Title = styled.h1`
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "Exo 2", sans-serif;
     color: #1d1d1d;
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+    }
   `
   const SkillsRightPage = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: 100vh;
     background-color: #eee;
   `
@@ -48,6 +51,10 @@ function Skills() {
     height: 4rem;
     width: 4rem;
     border-radius: 10px;
+    @media (max-width: 1024px) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
   `
 
   return (

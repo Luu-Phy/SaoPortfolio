@@ -10,11 +10,13 @@ import styled from "styled-components"
 
 function Experience() {
   const Title = styled.h1`
-    font-size: 6.5rem;
+    font-size: 5rem;
     font-family: "Exo 2", sans-serif;
     color: #1d1d1d;
-    padding: 0.5rem;
     text-align: center;
+    @media (max-width: 1024px) {
+      font-size: 3rem;
+    }
   `
   return (
     <div id="experience" className="experience">
